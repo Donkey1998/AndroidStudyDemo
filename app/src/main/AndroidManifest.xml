@@ -4,7 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +14,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VideoToBase64Demo.VideoToBase64Demo"></activity>
+        <activity android:name=".ServiceDemo.BlendServiceActivity"></activity>
+        <activity android:name=".ServiceDemo.BindServiceActivity" />
+        <activity android:name=".ServiceDemo.ServiceLifeActivity" />
+        <activity android:name=".ServiceDemo.ServiceActivity" />
+        <activity android:name=".VideoToBase64Demo.VideoToBase64Demo" />
         <activity android:name=".VolleyDemo.VolleyActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -23,6 +27,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".ServiceDemo.ServiceLife" />
+        <service android:name=".ServiceDemo.BindService" />
+        <service android:name=".ServiceDemo.BlendService" />
+        <service android:name=".ServiceDemo.MyIntentService" />
     </application>
 
 </manifest>

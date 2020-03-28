@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="match_parent"
+        android:text="开始服务"
+        android:id="@+id/bt_startService"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="绑定服务"
+        android:id="@+id/bindService"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="调用服务的内部方法"
+        android:id="@+id/bt_callSeviceMethod"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="解绑服务"
+        android:id="@+id/unbindService"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="停止服务"
+        android:id="@+id/bt_stopService"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp" />
+
+</LinearLayout>

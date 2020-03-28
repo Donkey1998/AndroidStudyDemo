@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.androidstudydemo.ServiceDemo.ServiceActivity;
 import com.example.androidstudydemo.VideoToBase64Demo.VideoToBase64Demo;
 import com.example.androidstudydemo.VolleyDemo.VolleyActivity;
 
@@ -21,6 +22,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         volley_bt.setOnClickListener(this);
         Button videoToBase64_bt = findViewById(R.id.videoToBase64_bt);
         videoToBase64_bt.setOnClickListener(this);
+        Button service_bt = findViewById(R.id.service_bt);
+        service_bt.setOnClickListener(this);
     }
 
     @Override
@@ -35,6 +38,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(MainActivity.this,"视屏转Base64",Toast.LENGTH_LONG).show();
                 Intent intent_video =new Intent(MainActivity.this, VideoToBase64Demo.class);
                 startActivity(intent_video);
+                break;
+            case R.id.service_bt:
+                Toast.makeText(MainActivity.this,"Service学习",Toast.LENGTH_LONG).show();
+                Intent intent_service =new Intent(MainActivity.this, ServiceActivity.class);
+                startActivity(intent_service);
                 break;
             default:break;
         }

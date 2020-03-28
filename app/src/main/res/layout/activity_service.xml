@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="服务的生命周期"
+        android:id="@+id/bt_serviceLife"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="绑定启动服务"
+        android:id="@+id/bt_bindService"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp" />
+    <Button
+    android:layout_width="match_parent"
+    android:text="混合启动服务"
+    android:id="@+id/bt_blendService"
+    android:layout_marginTop="30dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="IntentService学习"
+        android:id="@+id/bt_intentService"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp" />
+
+</LinearLayout>

@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.androidstudydemo.VideoToBase64Demo.VideoToBase64Demo;
+import com.example.androidstudydemo.ViewEvent.ViewEventActivity;
 import com.example.androidstudydemo.VolleyDemo.VolleyActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -21,6 +22,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         volley_bt.setOnClickListener(this);
         Button videoToBase64_bt = findViewById(R.id.videoToBase64_bt);
         videoToBase64_bt.setOnClickListener(this);
+        Button viewEvent_bt = findViewById(R.id.viewEvent_bt);
+        viewEvent_bt.setOnClickListener(this);
     }
 
     @Override
@@ -35,6 +38,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(MainActivity.this,"视屏转Base64",Toast.LENGTH_LONG).show();
                 Intent intent_video =new Intent(MainActivity.this, VideoToBase64Demo.class);
                 startActivity(intent_video);
+                break;
+            case R.id.viewEvent_bt:
+                Intent intent_viewEvent =new Intent(MainActivity.this, ViewEventActivity.class);
+                startActivity(intent_viewEvent);
                 break;
             default:break;
         }

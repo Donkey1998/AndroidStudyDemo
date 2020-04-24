@@ -17,5 +17,12 @@
         android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
         android:layout_height="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="View 事件分发"
+        android:id="@+id/viewEvent_bt"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp" />
 
 </LinearLayout>

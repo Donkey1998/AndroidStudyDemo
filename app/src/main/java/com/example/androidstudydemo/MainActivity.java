@@ -1,4 +1,4 @@
-package com.example.androidstudydemo;
+﻿package com.example.androidstudydemo;
 
 
 import android.content.Intent;
@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.example.androidstudydemo.ServiceDemo.ServiceActivity;
 import com.example.androidstudydemo.VideoToBase64Demo.VideoToBase64Demo;
+import com.example.androidstudydemo.ViewEvent.ViewEventActivity;
 import com.example.androidstudydemo.VolleyDemo.VolleyActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         videoToBase64_bt.setOnClickListener(this);
         Button service_bt = findViewById(R.id.service_bt);
         service_bt.setOnClickListener(this);
+        Button viewEvent_bt = findViewById(R.id.viewEvent_bt);
+        viewEvent_bt.setOnClickListener(this);
     }
 
     @Override
@@ -39,10 +42,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent_video =new Intent(MainActivity.this, VideoToBase64Demo.class);
                 startActivity(intent_video);
                 break;
-            case R.id.service_bt:
+           case R.id.service_bt:
                 Toast.makeText(MainActivity.this,"Service学习",Toast.LENGTH_LONG).show();
                 Intent intent_service =new Intent(MainActivity.this, ServiceActivity.class);
                 startActivity(intent_service);
+            case R.id.viewEvent_bt:
+                Intent intent_viewEvent =new Intent(MainActivity.this, ViewEventActivity.class);
+                startActivity(intent_viewEvent);
                 break;
             default:break;
         }

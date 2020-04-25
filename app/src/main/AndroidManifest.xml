@@ -2,9 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.androidstudydemo">
 
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
 
     <application
         android:allowBackup="true"
@@ -18,6 +20,7 @@
         <activity android:name=".ServiceDemo.BindServiceActivity" />
         <activity android:name=".ServiceDemo.ServiceLifeActivity" />
         <activity android:name=".ServiceDemo.ServiceActivity" />
+        <activity android:name=".ViewEvent.ViewEventActivity"></activity>
         <activity android:name=".VideoToBase64Demo.VideoToBase64Demo" />
         <activity android:name=".VolleyDemo.VolleyActivity" />
         <activity android:name=".MainActivity">
@@ -33,5 +36,9 @@
         <service android:name=".ServiceDemo.BlendService" />
         <service android:name=".ServiceDemo.MyIntentService" />
     </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

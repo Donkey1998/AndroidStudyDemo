@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -19,10 +19,13 @@
         android:layout_height="50dp" />
     <Button
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:text="Service学习"
         android:id="@+id/service_bt"
+=======
         android:text="View 事件分发"
         android:id="@+id/viewEvent_bt"
+>>>>>>> f328c9bdfbbfbafa8f452996521ba1a3d17a0a98
         android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
         android:layout_height="50dp" />

@@ -20,6 +20,7 @@
         <activity android:name=".ServiceDemo.ServiceActivity" />
         <activity android:name=".VideoToBase64Demo.VideoToBase64Demo" />
         <activity android:name=".VolleyDemo.VolleyActivity" />
+        <activity android:name=".ViewEvent.ViewEventActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

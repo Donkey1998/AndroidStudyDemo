@@ -3,7 +3,11 @@ package com.example.androidstudydemo.JsonDemo;
 import java.util.List;
 
 public class DataInfo {
-
+    /**
+     * data : {"count":5,"items":[{"id":45,"title":"坚果"},{"id":132,"title":"炒货"},{"id":166,"title":"蜜饯"},{"id":195,"title":"果脯"},{"id":196,"title":"礼盒"}]}
+     * rs_code : 1000
+     * rs_msg : success
+     */
     private  String rs_code, rs_msg;
     private  DataBean data;
 

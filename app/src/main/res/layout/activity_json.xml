@@ -1,27 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
 
-    <Button
-        android:layout_width="match_parent"
-        android:text="JsonObject对象"
-        android:id="@+id/jsonObject_bt"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_height="50dp" />
-    <Button
-        android:layout_width="match_parent"
-        android:text="JsonObject数组"
-        android:id="@+id/jsonArr_bt"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_height="50dp" />
-    <Button
-        android:layout_width="match_parent"
-        android:text="JsonObject复杂"
-        android:id="@+id/jsonComplex_bt"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_height="50dp" />
-</LinearLayout>
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="JsonObject对象"
+            android:id="@+id/jsonObject_bt"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="50dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:text="JsonObject数组"
+            android:id="@+id/jsonArr_bt"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="50dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:text="JsonObject复杂"
+            android:id="@+id/jsonComplex_bt"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="50dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:text="GSONObject对象"
+            android:id="@+id/gsonObject_bt"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="50dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:text="GSONObject数组"
+            android:id="@+id/gsonArr_bt"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="50dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:text="GSONObject复杂"
+            android:id="@+id/gsonComplex_bt"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="50dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:text="FaseJsonObject对象"
+            android:id="@+id/fastJsonObject_bt"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="50dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:text="FaseJson数组"
+            android:id="@+id/fastJsonArr_bt"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="50dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:text="FaseJson复杂"
+            android:id="@+id/fastJsonComplex_bt"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</ScrollView>

@@ -4,39 +4,24 @@
     android:layout_height="match_parent">
 
     <Button
-    android:layout_width="match_parent"
-    android:text="Volley学习"
-    android:id="@+id/volley_bt"
-    android:layout_marginTop="30dp"
-    android:layout_gravity="center_horizontal"
-    android:layout_height="50dp" />
-    <Button
         android:layout_width="match_parent"
-        android:text="视屏转Base64"
-        android:id="@+id/videoToBase64_bt"
+        android:text="JsonObject对象"
+        android:id="@+id/jsonObject_bt"
         android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
         android:layout_height="50dp" />
     <Button
         android:layout_width="match_parent"
-        android:text="Service学习"
-        android:id="@+id/service_bt"
+        android:text="JsonObject数组"
+        android:id="@+id/jsonArr_bt"
         android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
         android:layout_height="50dp" />
     <Button
         android:layout_width="match_parent"
-        android:text="View 事件分发"
-        android:id="@+id/viewEvent_bt"
+        android:text="JsonObject复杂"
+        android:id="@+id/jsonComplex_bt"
         android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
         android:layout_height="50dp" />
-    <Button
-        android:layout_width="match_parent"
-        android:text="Json解析"
-        android:id="@+id/json_bt"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_height="50dp" />
-
 </LinearLayout>

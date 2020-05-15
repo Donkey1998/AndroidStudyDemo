@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.androidstudydemo.JsonDemo.JsonActivity;
 import com.example.androidstudydemo.ServiceDemo.ServiceActivity;
 import com.example.androidstudydemo.VideoToBase64Demo.VideoToBase64Demo;
 import com.example.androidstudydemo.VolleyDemo.VolleyActivity;
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         service_bt.setOnClickListener(this);
         Button viewEvent_bt = findViewById(R.id.viewEvent_bt);
         viewEvent_bt.setOnClickListener(this);
+        Button json_bt = findViewById(R.id.json_bt);
+        json_bt.setOnClickListener(this);
 
     }
 
@@ -52,6 +55,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.viewEvent_bt:
                 Intent intent_viewEvent =new Intent(MainActivity.this, ViewEventActivity.class);
                 startActivity(intent_viewEvent);
+                break;
+            case R.id.json_bt:
+                Intent intent_json =new Intent(MainActivity.this, JsonActivity.class);
+                startActivity(intent_json);
                 break;
 
             default:break;

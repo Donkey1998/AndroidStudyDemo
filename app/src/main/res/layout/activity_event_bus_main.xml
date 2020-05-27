@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:layout_width="match_parent"
+        android:text="发送事件"
+        android:id="@+id/go_activity_bt"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp" />
+</LinearLayout>

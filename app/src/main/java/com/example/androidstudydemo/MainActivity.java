@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.example.androidstudydemo.EventBusDemo.EventBusMainActivity;
 import com.example.androidstudydemo.JsonDemo.JsonActivity;
+import com.example.androidstudydemo.OKHttpDemo.OkHttpActivity;
 import com.example.androidstudydemo.ServiceDemo.ServiceActivity;
 import com.example.androidstudydemo.VideoToBase64Demo.VideoToBase64Demo;
 import com.example.androidstudydemo.ViewEvent.ViewEventActivity;
@@ -20,7 +21,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.volley_bt)
     Button volleyBt;
@@ -34,6 +35,8 @@ public class MainActivity extends AppCompatActivity{
     Button jsonBt;
     @BindView(R.id.eventbus_bt)
     Button eventbusBt;
+    @BindView(R.id.okhttp_bt)
+    Button okhttpBt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +47,7 @@ public class MainActivity extends AppCompatActivity{
 
     }
 
-    @OnClick({R.id.volley_bt, R.id.videoToBase64_bt, R.id.service_bt, R.id.viewEvent_bt, R.id.json_bt, R.id.eventbus_bt})
+    @OnClick({R.id.volley_bt, R.id.videoToBase64_bt, R.id.service_bt, R.id.viewEvent_bt, R.id.json_bt, R.id.eventbus_bt,R.id.okhttp_bt})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.volley_bt:
@@ -73,6 +76,10 @@ public class MainActivity extends AppCompatActivity{
             case R.id.eventbus_bt:
                 Intent intentEventBus = new Intent(MainActivity.this, EventBusMainActivity.class);
                 startActivity(intentEventBus);
+                break;
+            case R.id.okhttp_bt:
+                Intent intentOkHttp = new Intent(MainActivity.this, OkHttpActivity.class);
+                startActivity(intentOkHttp);
                 break;
 
             default:

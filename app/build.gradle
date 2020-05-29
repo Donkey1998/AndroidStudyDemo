@@ -34,4 +34,6 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'com.alibaba:fastjson:1.2.60'
     implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.8.0'
+
 }

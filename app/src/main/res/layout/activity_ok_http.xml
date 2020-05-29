@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OKHttpDemo.OkHttpActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="异步GET请求"
+        android:id="@+id/asyncGet_bt"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="同步GET请求"
+        android:id="@+id/syncGet_bt"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="POST请求"
+        android:id="@+id/post_bt"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp" />
+
+</LinearLayout>

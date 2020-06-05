@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.example.androidstudydemo.EventBusDemo.EventBusMainActivity;
 import com.example.androidstudydemo.JsonDemo.JsonActivity;
 import com.example.androidstudydemo.OKHttpDemo.OkHttpActivity;
+import com.example.androidstudydemo.RetrofitDemo.RetrofitActivity;
 import com.example.androidstudydemo.ServiceDemo.ServiceActivity;
 import com.example.androidstudydemo.VideoToBase64Demo.VideoToBase64Demo;
 import com.example.androidstudydemo.ViewEvent.ViewEventActivity;
@@ -37,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
     Button eventbusBt;
     @BindView(R.id.okhttp_bt)
     Button okhttpBt;
+    @BindView(R.id.retrofit_bt)
+    Button retrofitBt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.volley_bt, R.id.videoToBase64_bt, R.id.service_bt, R.id.viewEvent_bt, R.id.json_bt, R.id.eventbus_bt,R.id.okhttp_bt})
+    @OnClick({R.id.volley_bt, R.id.videoToBase64_bt, R.id.service_bt, R.id.viewEvent_bt, R.id.json_bt, R.id.eventbus_bt, R.id.okhttp_bt,R.id.retrofit_bt})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.volley_bt:
@@ -80,6 +83,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.okhttp_bt:
                 Intent intentOkHttp = new Intent(MainActivity.this, OkHttpActivity.class);
                 startActivity(intentOkHttp);
+                break;
+            case R.id.retrofit_bt:
+                Intent intentRetrofit = new Intent(MainActivity.this, RetrofitActivity.class);
+                startActivity(intentRetrofit);
                 break;
 
             default:

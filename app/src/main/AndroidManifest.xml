@@ -10,7 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RetrofitDemo.RetrofitActivity"/>
+        <activity android:name=".RxjavaDemo.RxTakeActivity"></activity>
+        <activity android:name=".RxjavaDemo.RxFilterActivity" />
+        <activity android:name=".RxjavaDemo.RxBindingActivity" />
+        <activity android:name=".RxjavaDemo.RxMergeActivity" />
+        <activity android:name=".RxjavaDemo.RxSchuderActivity" />
+        <activity android:name=".RxjavaDemo.RxFlatMapActivity" />
+        <activity android:name=".RxjavaDemo.RxMapActivity" />
+        <activity android:name=".RxjavaDemo.NormalRxActivity" />
+        <activity android:name=".RetrofitDemo.RetrofitActivity" />
         <activity android:name=".OKHttpDemo.OkHttpActivity" />
         <activity android:name=".EventBusDemo.EventBusMainActivity" />
         <activity android:name=".JsonDemo.JsonActivity" />
@@ -28,15 +36,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".RxjavaDemo.RxjavaMainActivity" />
+        <activity android:name=".RxjavaDemo.RxTimerActivity" />
+        <activity android:name=".RxjavaDemo.RxConnetActivity" />
+        <activity android:name=".RxjavaDemo.RxSortActivity" />
+        <activity android:name=".RxjavaDemo.TimestampActivity" />
 
         <service android:name=".ServiceDemo.ServiceLife" />
         <service android:name=".ServiceDemo.BindService" />
         <service android:name=".ServiceDemo.BlendService" />
         <service android:name=".ServiceDemo.MyIntentService" />
     </application>
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

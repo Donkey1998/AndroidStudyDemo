@@ -40,5 +40,6 @@ dependencies {
     implementation 'io.reactivex:rxjava:1.2.1'
     implementation 'io.reactivex:rxandroid:1.0.1'
     implementation 'com.jakewharton.rxbinding:rxbinding:0.4.0'
-
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.2'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:2.2'
 }

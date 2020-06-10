@@ -71,6 +71,13 @@
         android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
         android:layout_height="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="Leak 内存泄漏检测"
+        android:id="@+id/leak_bt"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp" />
 
 </LinearLayout>
 </ScrollView>

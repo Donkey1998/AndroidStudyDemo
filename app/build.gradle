@@ -42,4 +42,5 @@ dependencies {
     implementation 'com.jakewharton.rxbinding:rxbinding:0.4.0'
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.2'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:2.2'
+    implementation 'cat.ereza:customactivityoncrash:2.2.0'
 }

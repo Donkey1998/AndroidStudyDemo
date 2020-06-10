@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
     Button rxjavaBt;
     @BindView(R.id.leak_bt)
     Button leakBt;
+    @BindView(R.id.custom_bt)
+    Button customBt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.volley_bt, R.id.videoToBase64_bt, R.id.service_bt, R.id.viewEvent_bt, R.id.json_bt, R.id.eventbus_bt, R.id.okhttp_bt, R.id.retrofit_bt, R.id.rxjava_bt, R.id.leak_bt})
+    @OnClick({R.id.volley_bt, R.id.videoToBase64_bt, R.id.service_bt, R.id.viewEvent_bt, R.id.json_bt, R.id.eventbus_bt, R.id.okhttp_bt, R.id.retrofit_bt, R.id.rxjava_bt, R.id.leak_bt,R.id.custom_bt})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.volley_bt:
@@ -101,6 +103,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.leak_bt:
                 Intent intentLeak = new Intent(MainActivity.this, LeakActivity.class);
                 startActivity(intentLeak);
+                break;
+            case R.id.custom_bt:
+                throw new IllegalStateException("are you ok?");
             default:
                 break;
         }

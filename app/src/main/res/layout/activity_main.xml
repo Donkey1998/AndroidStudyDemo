@@ -78,6 +78,13 @@
         android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
         android:layout_height="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="进入自定义崩溃捕捉界面（Custom Activity On Crash）"
+        android:id="@+id/custom_bt"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp" />
 
 </LinearLayout>
 </ScrollView>

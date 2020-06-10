@@ -9,7 +9,8 @@ import com.example.rxjavaretrofitmvp.util.XUtil;
 
 /**
  * Description : App
- *
+ * 参考链接：https://juejin.im/post/5e520db1e51d45270c277ca8
+ * 源码参考链接： https://github.com/LoveLifeEveryday/RxJava2_Retrofit_MVP2
  * @author XuCanyou666
  * @date 2020/2/8
  */

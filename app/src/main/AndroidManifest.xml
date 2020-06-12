@@ -44,6 +44,7 @@
         <activity android:name=".RxjavaDemo.RxConnetActivity" />
         <activity android:name=".RxjavaDemo.RxSortActivity" />
         <activity android:name=".RxjavaDemo.TimestampActivity" />
+        <activity android:name=".CustomViewDemo.CustomViewActivity" />
 
         <service android:name=".ServiceDemo.ServiceLife" />
         <service android:name=".ServiceDemo.BindService" />

@@ -18,6 +18,8 @@ import com.example.androidstudydemo.ServiceDemo.ServiceActivity;
 import com.example.androidstudydemo.VideoToBase64Demo.VideoToBase64Demo;
 import com.example.androidstudydemo.ViewEvent.ViewEventActivity;
 import com.example.androidstudydemo.VolleyDemo.VolleyActivity;
+import com.example.androidstudydemo.CustomViewDemo.CustomViewActivity;
+
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -48,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
     Button leakBt;
     @BindView(R.id.custom_bt)
     Button customBt;
+    @BindView(R.id.customView_bt)
+    Button customViewBt;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +63,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.volley_bt, R.id.videoToBase64_bt, R.id.service_bt, R.id.viewEvent_bt, R.id.json_bt, R.id.eventbus_bt, R.id.okhttp_bt, R.id.retrofit_bt, R.id.rxjava_bt, R.id.leak_bt,R.id.custom_bt})
+
+    @OnClick({R.id.volley_bt, R.id.videoToBase64_bt, R.id.service_bt, R.id.viewEvent_bt, R.id.json_bt, R.id.eventbus_bt, R.id.okhttp_bt, R.id.retrofit_bt, R.id.rxjava_bt, R.id.leak_bt, R.id.custom_bt, R.id.customView_bt})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.volley_bt:
@@ -106,6 +112,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.custom_bt:
                 throw new IllegalStateException("are you ok?");
+            case  R.id.customView_bt:
+                Intent intentCustomView = new Intent(MainActivity.this, CustomViewActivity.class);
+                startActivity(intentCustomView);
+                break;
+
             default:
                 break;
         }

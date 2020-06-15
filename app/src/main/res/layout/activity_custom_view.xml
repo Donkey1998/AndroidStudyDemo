@@ -4,7 +4,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="vertical">
+    <com.example.androidstudydemo.CustomViewDemo.CustomTitleView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/title"
+        app:title_text="自定义组合控件"
+        app:title_bg="@android:color/holo_orange_dark"
+        app:title_text_color="@android:color/holo_blue_dark"
+        />
     <com.example.androidstudydemo.CustomViewDemo.MyCustomView
         android:layout_width="70dp"
         android:layout_height="100dp"

@@ -5,4 +5,10 @@
         <!--声明我们的属性，名称为default_size,取值类型为尺寸类型（dp,px等）-->
         <attr name="default_size" format="dimension" />
     </declare-styleable>
+
+    <declare-styleable name="TitleBar">
+        <attr name="title_text_color" format="color" />
+        <attr name="title_bg" format="color" />
+        <attr name="title_text" format="string" />
+    </declare-styleable>
 </resources>

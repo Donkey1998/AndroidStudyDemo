@@ -5,14 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <com.example.androidstudydemo.CustomViewDemo.CustomTitleView
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:id="@+id/title"
-        app:title_text="自定义组合控件"
-        app:title_bg="@android:color/holo_orange_dark"
-        app:title_text_color="@android:color/holo_blue_dark"
-        />
+
     <com.example.androidstudydemo.CustomViewDemo.MyCustomView
         android:layout_width="70dp"
         android:layout_height="100dp"
@@ -23,4 +16,30 @@
         android:layout_height="100dp"
         android:background="#0FF"
         app:default_size="100dp" />
+    <com.example.androidstudydemo.CustomViewDemo.CustomTitleView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/title"
+        app:title_text="自定义组合控件"
+        app:title_bg="@android:color/holo_orange_dark"
+        app:title_text_color="@android:color/holo_blue_dark"
+        />
+    <com.example.androidstudydemo.CustomViewDemo.HorizontalView
+        android:layout_marginTop="6dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <ListView
+            android:id="@+id/lv_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+        <ListView
+            android:id="@+id/lv_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </com.example.androidstudydemo.CustomViewDemo.HorizontalView>
+
+
 </LinearLayout>

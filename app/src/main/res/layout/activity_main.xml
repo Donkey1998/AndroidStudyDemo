@@ -99,5 +99,12 @@
         android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
         android:layout_height="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="ListView 学习"
+        android:id="@+id/listView_bt"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp" />
 </LinearLayout>
 </ScrollView>

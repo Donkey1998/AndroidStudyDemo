@@ -13,6 +13,7 @@ import com.example.androidstudydemo.EventBusDemo.EventBusMainActivity;
 import com.example.androidstudydemo.GlideDemo.GlideDemoActivity;
 import com.example.androidstudydemo.JsonDemo.JsonActivity;
 import com.example.androidstudydemo.LeakCanaryDemo.LeakActivity;
+import com.example.androidstudydemo.ListViewDemo.ListViewActivity;
 import com.example.androidstudydemo.OKHttpDemo.OkHttpActivity;
 import com.example.androidstudydemo.RetrofitDemo.RetrofitActivity;
 import com.example.androidstudydemo.RxjavaDemo.RxjavaMainActivity;
@@ -54,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
     Button customViewBt;
     @BindView(R.id.glide_bt)
     Button glideBt;
+    @BindView(R.id.listView_bt)
+    Button listViewBt;
 
 
     @Override
@@ -66,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.volley_bt, R.id.videoToBase64_bt, R.id.service_bt, R.id.viewEvent_bt, R.id.json_bt, R.id.eventbus_bt, R.id.okhttp_bt, R.id.retrofit_bt, R.id.rxjava_bt, R.id.leak_bt, R.id.custom_bt, R.id.customView_bt,R.id.glide_bt})
+    @OnClick({R.id.volley_bt, R.id.videoToBase64_bt, R.id.service_bt, R.id.viewEvent_bt, R.id.json_bt, R.id.eventbus_bt, R.id.okhttp_bt, R.id.retrofit_bt, R.id.rxjava_bt, R.id.leak_bt, R.id.custom_bt, R.id.customView_bt, R.id.glide_bt, R.id.listView_bt})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.volley_bt:
@@ -121,6 +124,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.glide_bt:
                 Intent gilde = new Intent(MainActivity.this, GlideDemoActivity.class);
                 startActivity(gilde);
+                break;
+            case R.id.listView_bt:
+                Intent listView = new Intent(MainActivity.this, ListViewActivity.class);
+                startActivity(listView);
             default:
                 break;
         }

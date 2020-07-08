@@ -8,7 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.androidstudydemo.CustomViewDemo.CustomViewActivity;
 import com.example.androidstudydemo.EventBusDemo.EventBusMainActivity;
+import com.example.androidstudydemo.GlideDemo.GlideDemoActivity;
 import com.example.androidstudydemo.JsonDemo.JsonActivity;
 import com.example.androidstudydemo.LeakCanaryDemo.LeakActivity;
 import com.example.androidstudydemo.OKHttpDemo.OkHttpActivity;
@@ -18,8 +20,6 @@ import com.example.androidstudydemo.ServiceDemo.ServiceActivity;
 import com.example.androidstudydemo.VideoToBase64Demo.VideoToBase64Demo;
 import com.example.androidstudydemo.ViewEvent.ViewEventActivity;
 import com.example.androidstudydemo.VolleyDemo.VolleyActivity;
-import com.example.androidstudydemo.CustomViewDemo.CustomViewActivity;
-
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -52,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
     Button customBt;
     @BindView(R.id.customView_bt)
     Button customViewBt;
+    @BindView(R.id.glide_bt)
+    Button glideBt;
 
 
     @Override
@@ -64,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.volley_bt, R.id.videoToBase64_bt, R.id.service_bt, R.id.viewEvent_bt, R.id.json_bt, R.id.eventbus_bt, R.id.okhttp_bt, R.id.retrofit_bt, R.id.rxjava_bt, R.id.leak_bt, R.id.custom_bt, R.id.customView_bt})
+    @OnClick({R.id.volley_bt, R.id.videoToBase64_bt, R.id.service_bt, R.id.viewEvent_bt, R.id.json_bt, R.id.eventbus_bt, R.id.okhttp_bt, R.id.retrofit_bt, R.id.rxjava_bt, R.id.leak_bt, R.id.custom_bt, R.id.customView_bt,R.id.glide_bt})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.volley_bt:
@@ -112,11 +114,13 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.custom_bt:
                 throw new IllegalStateException("are you ok?");
-            case  R.id.customView_bt:
+            case R.id.customView_bt:
                 Intent intentCustomView = new Intent(MainActivity.this, CustomViewActivity.class);
                 startActivity(intentCustomView);
                 break;
-
+            case R.id.glide_bt:
+                Intent gilde = new Intent(MainActivity.this, GlideDemoActivity.class);
+                startActivity(gilde);
             default:
                 break;
         }

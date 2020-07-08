@@ -43,4 +43,5 @@ dependencies {
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.2'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:2.2'
     implementation 'cat.ereza:customactivityoncrash:2.2.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
 }

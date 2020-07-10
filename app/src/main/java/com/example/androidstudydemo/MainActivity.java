@@ -14,6 +14,7 @@ import com.example.androidstudydemo.GlideDemo.GlideDemoActivity;
 import com.example.androidstudydemo.JsonDemo.JsonActivity;
 import com.example.androidstudydemo.LeakCanaryDemo.LeakActivity;
 import com.example.androidstudydemo.ListViewDemo.ListViewActivity;
+import com.example.androidstudydemo.ListViewDemo.RefreshListViewActivity;
 import com.example.androidstudydemo.OKHttpDemo.OkHttpActivity;
 import com.example.androidstudydemo.RetrofitDemo.RetrofitActivity;
 import com.example.androidstudydemo.RxjavaDemo.RxjavaMainActivity;
@@ -126,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(gilde);
                 break;
             case R.id.listView_bt:
-                Intent listView = new Intent(MainActivity.this, ListViewActivity.class);
+                Intent listView = new Intent(MainActivity.this, RefreshListViewActivity.class);
                 startActivity(listView);
             default:
                 break;
